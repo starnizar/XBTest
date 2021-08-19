@@ -20,6 +20,7 @@ h3 {
     text-shadow: -5px 5px 5px grey;
 }
 .toggleWrapper label {
+    max-height: 25px;
     font-size: larger;
     padding: 8px 20px 5px 10px;
     background-color: #efefef;
@@ -76,12 +77,15 @@ form input{
     border-radius: 5px;
     transition: .3s;
     box-shadow: inset 0 0 5px blue;
+    -webkit-box-shadow: inset 0 0 5px blue;
 }
 form input:focus {
     box-shadow: inset 0 0 8px blue;
+    -webkit-box-shadow: inset 0 0 8px blue;
 }
 form input:read-only {
     box-shadow: inset 0 0 5px red;
+    -webkit-box-shadow: inset 0 0 5px red;
 }
 form button {
     padding: 5px 12px;
