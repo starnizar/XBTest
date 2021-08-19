@@ -30,7 +30,7 @@
     box-shadow: 0 2px 5px gray;
 }
 .toggleWrapper label:active {
-    box-shadow: 0 2px 2px gray;
+    box-shadow: 0 0 1px gray;
 }
 .lightOff{
     position: absolute;

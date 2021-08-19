@@ -21,7 +21,7 @@ export default function () {
     addBtn.addEventListener('click', event => {
         event.preventDefault()
         if (!input.value.trim()) {
-            return
+            return alert('Tag name field is empty')
         }
         set(input.value)
         input.value = ''
