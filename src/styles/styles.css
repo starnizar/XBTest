@@ -78,14 +78,17 @@ form input{
     transition: .3s;
     box-shadow: inset 0 0 5px blue;
     -webkit-box-shadow: inset 0 0 5px blue;
+    -moz-box-shadow: inset 0 0 5px blue;
 }
 form input:focus {
     box-shadow: inset 0 0 8px blue;
     -webkit-box-shadow: inset 0 0 8px blue;
+    -moz-box-shadow: inset 0 0 8px blue;
 }
 form input:read-only {
     box-shadow: inset 0 0 5px red;
     -webkit-box-shadow: inset 0 0 5px red;
+    -moz-box-shadow: inset 0 0 5px red;
 }
 form button {
     padding: 5px 12px;
