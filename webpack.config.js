@@ -33,7 +33,7 @@ module.exports = {
     },
     plugins: [
         new HTMLWebpackPlugin({
-            template: './dist/index.html',
+            template: './src/index.html',
             minify: {
                 collapseWhitespace: isProd
             }

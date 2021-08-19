@@ -27,16 +27,23 @@ function updateTagField() {
     app.appendChild(Tags())
 }
 
-const toggle = document.getElementById('toggle')
-toggle.addEventListener('change', event => {
-    event.preventDefault()
+function setToggle() {
+    const light = document.querySelector('.lightOff')
     if (toggle.hasAttribute('checked')) {
         toggle.removeAttribute('checked')
+        light.classList.toggle('lightOn')
         App()
     } else {
         toggle.setAttribute('checked', 'checked')
+        light.classList.toggle('lightOn')
         App()
     }
+}
+
+const toggle = document.getElementById('toggle')
+toggle.addEventListener('change', event => {
+    event.preventDefault()
+    setToggle()
 })
 
 function App () {

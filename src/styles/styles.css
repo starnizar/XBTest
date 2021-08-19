@@ -10,24 +10,45 @@
     max-width: 1000px;
 }
 .toggleWrapper {
+    position: relative;
     display: flex;
     align-content: center;
     justify-content: flex-end;
     margin: 20px;
 }
-.toggleWrapper > label {
+.toggleWrapper label {
     font-size: larger;
-    padding-right: 10px;
+    padding: 8px 20px 5px 10px;
+    background-color: #efefef;
+    border-radius: 5px;
     font-weight: bolder;
+    box-shadow: 0 2px 2px gray;
     transition: .2s;
-}
-.toggleWrapper > label:hover {
-    text-shadow: 0 5px 5px gray;
     cursor: pointer;
+}
+.toggleWrapper label:hover {
+    box-shadow: 0 2px 5px gray;
+}
+.toggleWrapper label:active {
+    box-shadow: 0 2px 2px gray;
+}
+.lightOff{
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #ff0606;
+    box-shadow: 0 0 1px 2px #ff2424;
+    transition: .3s;
+}
+.lightOn{
+    background-color: greenyellow;
+    box-shadow: 0 0 1px 2px greenyellow;
 }
 #toggle {
-    height: 25px;
-    cursor: pointer;
+   display: none;
 }
 .app {
     display: flex;
@@ -65,8 +86,8 @@ form button {
     font-size: 18px;
     font-weight: bolder;
     border-radius: 5px;
-    border: 1px solid grey;
-    box-shadow: 0 0 5px grey;
+    border: none;
+    box-shadow: 0 2px 3px grey;
     cursor: pointer;
     transition: .2s;
 }
