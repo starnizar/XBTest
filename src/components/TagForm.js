@@ -23,7 +23,7 @@ export default function () {
         if (!input.value.trim()) {
             return alert('Tag name field is empty')
         }
-        const tagsArr = input.value.split(' ')
+        const tagsArr = input.value.trim().split(' ')
         set(tagsArr)
         input.value = ''
     })
