@@ -23,9 +23,9 @@ export default function () {
         if (!input.value.trim()) {
             return alert('Tag name field is empty')
         }
-        set(input.value)
+        const tagsArr = input.value.split(' ')
+        set(tagsArr)
         input.value = ''
     })
-
     return tagForm
 }

@@ -2,10 +2,18 @@ import TagForm from './components/TagForm'
 import Tags from './components/Tags'
 import './styles/styles.css'
 
-export function set(tagName) {
+export function set(tagNames) {
     const allTags = JSON.parse(localStorage.getItem('tags')) || []
-    const newTag = [...allTags, {name: tagName, id: Date.now().toString()}]
-    localStorage.setItem('tags', JSON.stringify(newTag))
+
+    const newTags = tagNames.map((item, index) => {
+        return {
+            name: item,
+            id: (Date.now()+index).toString()
+        }
+    })
+
+    const updatedTagsArr = [...allTags, ...newTags]
+    localStorage.setItem('tags', JSON.stringify(updatedTagsArr))
     updateTagField()
 }
 

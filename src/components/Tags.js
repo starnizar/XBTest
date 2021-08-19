@@ -8,7 +8,6 @@ export default function Tags() {
 
     tagsField.classList.add('tagsWrapper')
 
-    console.log(allTags)
     allTags && allTags.map(item => {
         const tagBox = document.createElement('div')
         tagBox.classList.add('tagBox')
